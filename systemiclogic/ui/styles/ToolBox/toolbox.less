@@ -1,0 +1,246 @@
+@import '../../node_modules/font-awesome/less/font-awesome';
+@import '../../node_modules/bootstrap/less/bootstrap';
+
+.MainContainer {
+  margin: 0 auto 0 auto;
+  width: 95%;
+  min-width: 200px;
+}
+
+.TextField {
+  background-color: transparent !important;
+  outline: none !important;
+  border-width: 0 0 1px 0 !important;
+  box-shadow: none !important;
+  margin-left: 0 !important;
+  border-radius: 0 !important;
+  border-bottom-style: solid !important;
+}
+
+.PageContentHolder{
+  margin:70px 0 40px 0;
+}
+
+.TextBasedFieldBlur {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.TextBasedFieldFocus {
+  border-bottom: 2px solid #009688;
+}
+
+.TextBasedFieldWarning {
+  border-bottom: 2px solid red;
+}
+
+.FormRow {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.FormColumn {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 10px;
+}
+
+.DrawerParent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #eeeeee;
+  box-shadow: 1px 1px 6px;
+  z-index: 5;
+}
+
+.Drawer {
+  width: 0;
+  height: 100vh;
+  padding: 10px;
+  display: none
+}
+
+.Drawer button {
+  background-color: #eeeeee;
+  color: #0277bd;
+  border-width: 0;
+  outline: 0;
+  margin: 10px 0 10px 0
+}
+
+.MenuToggleButton {
+  background-color: #1e88e5;
+  color: white;
+  border-width: 0;
+  outline: 0;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  box-shadow: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 7
+}
+
+.DrawerMenuItems {
+  display: none;
+  margin-top: 41px;
+}
+
+.HeaderPanelContainer {
+  text-align: center;
+  height: 70px;
+  background-color: #01579b;
+  padding: 15px 0px 15px 0px;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 3;
+  text-shadow: 1px 1px 1px black;
+}
+
+.FormContainer {
+  display: block;
+}
+
+.SubmitButtons {
+  min-width: 120px;
+  margin:0 330px 100px 0;
+  float:right;
+
+}
+
+@media screen and (max-width: 650px) {
+  .SubmitButtons {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1 !important;
+    width: 100% !important;
+    border-radius: 0 !important;
+    height: 50px !important;
+    margin: 0 !important;
+  }
+
+  .TextField,
+  textarea,
+  .TextAreaAncestor,
+  .TextFieldsAncestor,
+  .DropdownAncestor,
+  .ReactDropDowns,
+  .FileSelectorAncestor,
+  .RadioButtonsAncestor,
+  .CheckboxButtonsAncestor
+  {
+    width: 95% !important;
+  }
+
+  .FormColumn {
+    width: 90% !important;
+  }
+
+  .OutDatedBrowserWarning{
+    display: none !important;
+  }
+
+
+}
+
+.FormsTables {
+  width: 90%;
+  max-width: 500px;
+  min-width: 200px;
+  margin: 70px auto 0 auto;
+
+}
+
+.FormsTables .FormsTableCols {
+  padding: 20px 0 0 0;
+}
+
+h1 {
+  font-size: 1.2em !important;
+  font-weight: bold;
+  margin: 0 !important;
+  color: #01579b
+}
+
+textarea {
+  resize: none !important;
+  outline: none !important;
+  padding: 5px !important;
+  background-color: transparent !important;
+  border-width: 0 0 1px 0 !important;
+  border-style: solid !important;
+}
+
+.fixedBottomLeft {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 99999999;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.PrefabButtons {
+  border-width: 0 !important;
+  outline: none !important;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: inline;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 3px 3px 5px 2px #e0e0e0;
+  font-size: 20px;
+  margin: 0 10px 0 10px;
+  text-shadow: 1px 1px 1px black;
+
+}
+
+.floatingButtons {
+  border-width: 0 !important;
+  outline: none !important;
+  display: inline;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 3px 3px 5px 2px #e0e0e0;
+  font-size: 20px;
+  margin: 0 10px 0 10px;
+  min-width: 50px;
+  text-shadow: 1px 1px 1px black;
+}
+
+hr {
+  border: 1px solid #f5f5f5;
+  margin: 30px 0 30px 0;
+}
+
+.Radios,.CheckBoxes{
+  color:black;
+  margin-left:20px;
+  cursor:pointer;
+}
+
+label{
+  font-weight: normal !important;
+  margin:20px !important;
+}

@@ -1,0 +1,10 @@
+import AjaxLoadingDisplayModule from './AllModules/AjaxLoadingDisplayModule';
+import AlertDisplayModule from './AllModules/AlertDisplayModule';
+import AjaxSenderModule from './AllModules/AjaxSenderModule';
+import FullFormValidationModule from './AllModules/FullFormValidationModule';
+import ReadLocalFilesAbstraction from './AllModules/ReadLocalFiles/ReadLocalFilesAbstraction';
+export let AjaxLoadingDisplay=AjaxLoadingDisplayModule;
+export let AlertDisplay=AlertDisplayModule;
+export let AjaxSender=AjaxSenderModule;
+export let FullFormValidation=FullFormValidationModule;
+export let File=ReadLocalFilesAbstraction;
